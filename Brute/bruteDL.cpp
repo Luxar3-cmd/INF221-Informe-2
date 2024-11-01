@@ -101,10 +101,3 @@ int main () {
     return 0;
 
 }
-
-/*
-costo = 6
-exeention
-execution
-
-*/
