@@ -26,9 +26,8 @@ def save_matrix_to_file(matrix, filename):
     print(f"Matriz de costos guardada en {file_path}")
 
 if __name__ == "__main__":
-    substitution_cost = 2  # Ejemplo de costo parametrizable
+    substitution_cost = 1  # Ejemplo de costo parametrizable
 
-    # Crear matriz de costos con un costo de sustitución de 2
     cost_matrix = create_cost_matrix(substitution_cost)
     
     # Guardar la matriz en un archivo de texto
