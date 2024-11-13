@@ -1,0 +1,6 @@
+Case,Avg_Tiempo_FB,Std_Tiempo_FB,Avg_Tiempo_DP,Std_Tiempo_DP
+Empty,0,0,0,0
+Empty-NonEmpty,0,0,0.6,0.69282
+Equal,0,0,4.48,3.18898
+Repetition,249349,592675,8.76,8.2038
+Transposition,139.1,484.808,6.93,4.96841

@@ -79,8 +79,8 @@ int bruteDL (string& p,string& s ,int i, int j) {
     } 
 
     int sustitucion = costo_sub(p[i-1], s[j-1]) + bruteDL(p,s,i-1,j-1); // Sustitución
-    int insercion = costo_ins(s[j-1]) + bruteDL(p,s,i-1,j); // Inserción
-    int eliminacion = costo_del(p[i-1]) + bruteDL(p,s,i,j-1); // Eliminación
+    int insercion = costo_ins(s[j-1]) + bruteDL(p,s,i,j - 1); // Inserción
+    int eliminacion = costo_del(p[i-1]) + bruteDL(p,s,i - 1,j); // Eliminación
 
     return min({transposition,sustitucion,insercion,eliminacion});
 }

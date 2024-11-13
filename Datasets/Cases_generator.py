@@ -13,7 +13,7 @@ def generate_repeated_char_string(length):
 def generate_file_with_transpositions_and_repetitions(num_transpositions, num_repetitions, num_empty_non_empty_pairs, num_equal_repetitions, max_length):
     # Obtener la ruta del directorio actual donde está el archivo .py
     current_directory = os.path.dirname(os.path.abspath(__file__))
-    filepath = os.path.join(current_directory, "datasets.csv")
+    filepath = os.path.join(current_directory, "dataset2.csv")
 
     with open(filepath, mode="w", newline="") as file:
         writer = csv.writer(file)

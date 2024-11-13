@@ -28,8 +28,8 @@ int dynamicDL(const string &p, const string &s) {
     }
     
     // Llenado de la matriz de costos usando DP
-    for (int i = 1; i <= length_p + 1; i++) {
-        for (int j = 1; j <= length_s + 1; j++) {
+    for (int i = 1; i <= length_p; i++) {
+        for (int j = 1; j <= length_s; j++) {
             // Cálculo del costo de sustitución o coincidencia
             int d = (p[i - 1] == s[j - 1]) ? 0 : costo_sub(p[i - 1], s[j - 1]);
             

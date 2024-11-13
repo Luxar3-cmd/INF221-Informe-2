@@ -16,7 +16,7 @@ def generate_fixed_length_pairs(length, num_pairs=50):
         pairs.append((word1, word2))
     return pairs
 
-def generate_fixed_length_dataset(max_length=10, num_pairs=50, filename="fixed_length_dataset.csv"):
+def generate_fixed_length_dataset(max_length=10, num_pairs=50, filename="dataset1.csv"):
     """Genera un dataset con palabras de longitudes fijas desde 1 hasta max_length y lo guarda en un archivo CSV."""
     # Obtener la ruta actual del script
     current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -35,4 +35,4 @@ def generate_fixed_length_dataset(max_length=10, num_pairs=50, filename="fixed_l
 max_length = 11  # Longitud máxima de las palabras
 num_pairs = 10  # Número de pares por cada longitud
 generate_fixed_length_dataset(max_length, num_pairs)
-print(f"Archivo 'fixed_length_dataset.csv' generado con {num_pairs} pares de palabras por cada longitud de 1 a {max_length}.")
+print(f"Archivo 'dataset1.csv' generado con {num_pairs} pares de palabras por cada longitud de 1 a {max_length}.")
